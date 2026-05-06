@@ -6,7 +6,7 @@ This lab was created in Cisco Packet Tracer to practice dynamic routing using OS
 
 The topology consists of three routers connected through point-to-point transit networks with OSPF configured to dynamically advertise and learn routes.
 
----
+
 
 # Objectives
 
@@ -17,7 +17,7 @@ The topology consists of three routers connected through point-to-point transit 
 - Verify dynamically learned routes
 - Test end-to-end connectivity
 
----
+
 
 # Technologies Used
 
@@ -30,7 +30,7 @@ The topology consists of three routers connected through point-to-point transit 
 - Route Advertisement
 - Network Troubleshooting
 
----
+
 
 # Topology
 
@@ -40,7 +40,7 @@ The network consists of:
 - Transit point-to-point links
 - VLAN networks connected behind R1
 
----
+
 
 # IP Addressing
 
@@ -58,40 +58,40 @@ The network consists of:
 | R2 | 10.0.0.5/30 |
 | R3 | 10.0.0.6/30 |
 
----
+
 
 # OSPF Configuration Example
 
-```bash
+
 router ospf 1
 
 network 10.0.0.0 0.0.0.3 area 0
 network 10.0.0.4 0.0.0.3 area 0
-```
 
----
+
+
 
 # Verification Commands
 
 ## Verify OSPF Neighbors
 
-```bash
+
 show ip ospf neighbor
-```
+
 
 ## Verify Routing Table
 
-```bash
+
 show ip route
-```
+
 
 ## Verify Interface Status
 
-```bash
-show ip interface brief
-```
 
----
+show ip interface brief
+
+
+
 
 # Troubleshooting Performed
 
@@ -110,7 +110,7 @@ show ip interface brief
 - Verified OSPF network statements
 - Tested connectivity with ICMP ping
 
----
+
 
 # Skills Practiced
 
@@ -123,7 +123,7 @@ show ip interface brief
 - Layer 3 troubleshooting
 - Cisco IOS CLI navigation
 
----
+
 
 # Screenshots
 
@@ -143,7 +143,7 @@ show ip interface brief
 
 (Add screenshot here)
 
----
+
 
 # Packet Tracer File
 
