@@ -144,23 +144,6 @@ During the lab several issues were encountered and resolved.
 
 
 
-# Screenshots
-
-## Network Topology
-
-(Add topology screenshot here)
-
-## VLAN Verification
-
-(Add VLAN screenshot here)
-
-## Trunk Verification
-
-(Add trunk screenshot here)
-
-## Successful Connectivity Tests
-
-(Add ping test screenshot here)
 
 
 
