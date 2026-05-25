@@ -1,0 +1,11 @@
+interface GigabitEthernet0/0/0
+ description ## Connection To PC 1 ##
+ ip address 192.168.1.254 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/0/1
+ description ## Connection To PC 2 ##
+ ip address 192.168.2.254 255.255.255.0
+ duplex auto
+ speed auto
