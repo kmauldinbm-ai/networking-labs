@@ -1,1 +1,95 @@
+# Basic Router Configuration Lab
 
+## Overview
+
+This lab demonstrates foundational Cisco IOS router configuration tasks performed in Packet Tracer while studying for the CCNA.
+
+Skills demonstrated include:
+
+- IPv4 interface configuration
+- Interface descriptions
+- Enabling router interfaces
+- Connectivity verification
+- Configuration saving and management
+- Basic troubleshooting
+
+
+
+## Topology
+
+![Topology](screenshots/topology.png)
+
+
+
+## Addressing Table
+
+| Device | Interface | IP Address |
+|---|---|---|
+| R1 | G0/0 | 192.168.1.1/24 |
+| R1 | G0/1 | 192.168.2.1/24 |
+| PC1 | NIC | 192.168.1.10/24 |
+| PC2 | NIC | 192.168.2.10/24 |
+
+Default gateways:
+- PC1 → 192.168.1.1
+- PC2 → 192.168.2.1
+
+
+
+## Router Configuration
+
+Configuration file:
+
+- [R1-config.txt](configs/R1-config.txt)
+
+Example interface configuration:
+
+
+interface GigabitEthernet0/0
+ description Link to PC1 LAN
+ ip address 192.168.1.1 255.255.255.0
+ no shutdown
+
+
+
+
+## Interface Verification
+
+### show ip interface brief
+
+![Show IP Interface Brief](screenshots/show-ip-interface-brief.png)
+
+
+
+## Running Configuration
+
+![Running Config](screenshots/running-config-interfaces.png)
+
+
+
+## Connectivity Testing
+
+Successful ping between networks:
+
+![Successful Ping](screenshots/successful-ping.png)
+
+
+
+## Troubleshooting Notes
+
+Issue encountered:
+- Interfaces initially showed as administratively down.
+
+Resolution:
+- Enabled interfaces using the `no shutdown` command.
+
+
+
+## Skills Demonstrated
+
+- Cisco IOS CLI navigation
+- IPv4 addressing
+- Interface configuration
+- Interface verification
+- Basic connectivity troubleshooting
+- Router configuration management
