@@ -74,6 +74,6 @@ After the link returned, OSPF selected the lower-cost path through R2 again.
 
 ## Lab file
 
-The Packet Tracer file will be added here after the GitHub sign-in step is complete.
+Open [dhcp-ospf-route-failover.pkt](dhcp-ospf-route-failover.pkt) with Cisco Packet Tracer.
 
 This is a simulated learning lab, not a production network.
