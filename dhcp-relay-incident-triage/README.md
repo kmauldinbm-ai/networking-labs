@@ -16,7 +16,7 @@ Do not assume DHCP is the only possible cause. Confirm the scope and collect evi
 The project uses the existing four-router DHCP/OSPF topology. The DHCP server is `10.0.0.1`; Branch North is connected to R3 and Branch South to R4. Refer to the Packet Tracer file for exact interface addressing.
 
 - [`dhcp-ospf-route-failover-fixed.pkt`](dhcp-ospf-route-failover-fixed.pkt) — known-good topology after remediation. Use it as the baseline when preparing a faulted challenge copy.
-- [`facilitator-notes.md`](facilitator-notes.md) — fault injection and answer; keep this from the learner during a live challenge.
+- [`facilitator-notes.md`](facilitator-notes.md) — fault injection and answer; attempt the learner tasks before reading this.
 - [`incident-report.md`](incident-report.md) — report from the completed troubleshooting run.
 
 ## Learner tasks
@@ -49,6 +49,6 @@ The issue is resolved when a new Branch North client receives a valid lease, rea
 
 ## Packet Tracer
 
-Open the `.pkt` file with Cisco Packet Tracer. To practice the incident, first save a separate challenge copy and use the facilitator notes to seed the fault. Preserve the provided fixed topology as your known-good baseline.
+Open the `.pkt` file with Cisco Packet Tracer. To practice the incident, first save a separate challenge copy and use the facilitator notes to seed the fault. The notes are public with the rest of this learning repo, so this is a self-study challenge rather than a blinded assessment. Preserve the provided fixed topology as your known-good baseline.
 
 This is a simulated learning exercise, not a production network.
