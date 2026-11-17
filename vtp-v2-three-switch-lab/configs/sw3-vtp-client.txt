@@ -1,0 +1,12 @@
+! Reference config: SW3 VTP v2 client.
+! Set domain/version/password in server mode first, then switch to client mode.
+hostname SW3
+vtp domain CAMPUS-LAB
+vtp version 2
+vtp password REPLACE_WITH_LAB_ONLY_PASSWORD
+vtp mode client
+!
+interface gigabitethernet0/2
+ description TRUNK_TO_SW2
+ switchport mode trunk
+ no shutdown
