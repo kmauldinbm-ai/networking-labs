@@ -43,7 +43,7 @@ These VLANs were created on SW1 and learned by the clients through VTP:
 | 80 | Staff |
 | 999 | Native-Vlan |
 
-VLAN 50 was added during the domain-mismatch test; VLANs 60 and 80 were added during the password test. VTP distributes VLAN definitions. It does not automatically assign endpoint ports or set the native VLAN on a trunk.
+VLAN 50 was used during the domain-mismatch test; VLANs 60 and 80 were also present in the final VLAN database. VTP distributes VLAN definitions. It does not automatically assign endpoint ports or set the native VLAN on a trunk.
 
 ## Configure VTP
 
