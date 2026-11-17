@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="460" viewBox="0 0 1200 460" role="img" aria-labelledby="title desc">
+  <title id="title">VTP v2 three-switch lab topology</title>
+  <desc id="desc">SW1 is the VTP server and connects by trunk to VTP client SW2, which connects by trunk to VTP client SW3.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b1220"/><stop offset="1" stop-color="#16243a"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#000" flood-opacity=".25"/></filter>
+    <style>
+      .title{font:700 30px Arial,sans-serif;fill:#f4f7fb}.sub{font:15px Arial,sans-serif;fill:#a7b8cc}.sw{fill:#172a43;stroke:#48b7a7;stroke-width:2}.label{font:700 21px Arial,sans-serif;fill:#f4f7fb}.small{font:14px Arial,sans-serif;fill:#b9c8d8}.tag{font:700 13px Arial,sans-serif;fill:#08121e}.link{stroke:#58c9b7;stroke-width:5;fill:none}.chip{fill:#203a57;stroke:#426380;stroke-width:1.5}.note{font:13px Arial,sans-serif;fill:#c5d3e0}
+    </style>
+  </defs>
+  <rect width="1200" height="460" rx="24" fill="url(#bg)"/>
+  <text x="56" y="62" class="title">VTP v2 · Three-Switch Lab</text>
+  <text x="56" y="90" class="sub">One server · two clients · live VLAN propagation and fault isolation</text>
+  <g filter="url(#shadow)">
+    <rect x="110" y="175" width="270" height="132" rx="18" class="sw"/>
+    <rect x="465" y="175" width="270" height="132" rx="18" class="sw"/>
+    <rect x="820" y="175" width="270" height="132" rx="18" class="sw"/>
+  </g>
+  <text x="245" y="222" text-anchor="middle" class="label">SW1</text><text x="245" y="251" text-anchor="middle" class="small">VTP SERVER · CAMPUS-LAB</text><text x="245" y="278" text-anchor="middle" class="small">Creates VLAN database</text>
+  <text x="600" y="222" text-anchor="middle" class="label">SW2</text><text x="600" y="251" text-anchor="middle" class="small">VTP CLIENT</text><text x="600" y="278" text-anchor="middle" class="small">Learns VLAN updates</text>
+  <text x="955" y="222" text-anchor="middle" class="label">SW3</text><text x="955" y="251" text-anchor="middle" class="small">VTP CLIENT</text><text x="955" y="278" text-anchor="middle" class="small">Learns VLAN updates</text>
+  <path d="M380 241 L465 241" class="link"/><path d="M735 241 L820 241" class="link"/>
+  <rect x="362" y="166" width="121" height="28" rx="14" fill="#58c9b7"/><text x="422" y="185" text-anchor="middle" class="tag">Fa0/1 ↔ Fa0/1</text>
+  <rect x="717" y="166" width="138" height="28" rx="14" fill="#58c9b7"/><text x="786" y="185" text-anchor="middle" class="tag">Gi0/2 ↔ Gi0/2</text>
+  <rect x="100" y="349" width="1000" height="55" rx="14" class="chip"/>
+  <text x="600" y="373" text-anchor="middle" class="note">VLANs: 10 Sales · 20 IT · 30 Engineering · 40 HR · 50 Finance · 60 Maintence · 80 Staff · 999 Native-Vlan</text>
+  <text x="600" y="392" text-anchor="middle" class="note">VTP updates require matching domain and password, compatible version, and operational trunks</text>
+</svg>
