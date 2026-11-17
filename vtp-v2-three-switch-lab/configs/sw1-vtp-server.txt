@@ -1,0 +1,29 @@
+! Reference config: SW1 VTP v2 server.
+! Replace the password placeholder with an isolated lab-only value.
+hostname SW1
+vtp domain CAMPUS-LAB
+vtp version 2
+vtp password REPLACE_WITH_LAB_ONLY_PASSWORD
+vtp mode server
+!
+vlan 10
+ name Sales
+vlan 20
+ name IT
+vlan 30
+ name Engineering
+vlan 40
+ name HR
+vlan 50
+ name Finance
+vlan 60
+ name Maintence
+vlan 80
+ name Staff
+vlan 999
+ name Native-Vlan
+!
+interface fastethernet0/1
+ description TRUNK_TO_SW2
+ switchport mode trunk
+ no shutdown
