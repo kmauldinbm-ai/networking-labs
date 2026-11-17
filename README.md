@@ -20,6 +20,7 @@ Hands-on Cisco Packet Tracer labs documenting networking fundamentals, enterpris
 - [Basic VLAN lab](01-basic-vlan-lab/) — Create VLANs and assign switch access ports.
 - [Inter-VLAN routing](02-intervlan-routing/) — Route traffic between VLANs and verify gateway connectivity.
 - [Network segmentation and VLAN routing](network-segmentation-and-vlan-routing/) — Practice VLAN-based segmentation and inter-VLAN communication.
+- [VTP v2 three-switch lab](vtp-v2-three-switch-lab/) — Configure a VTP server and clients, propagate VLANs, and troubleshoot domain/password mismatches.
 
 ## Related projects
 
